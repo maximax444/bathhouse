@@ -1,3 +1,131 @@
-.footer{
-	
+.footer {
+    padding: 80px 0;
+    background: #121312;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__phone {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #FFFFFF;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    &__time {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.5);
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    &__call {
+        background: #076C26;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 262px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+        &:hover {
+            background: darken(#076C26, 10);
+        }
+    }
+
+    &__end {
+        padding-top: 81px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__soc {
+        display: flex;
+        align-items: center;
+        grid-gap: 27px;
+
+        span {
+            max-width: 118px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            grid-gap: 20px;
+        }
+    }
+
+    &__copy {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.prefooter {
+    padding-top: 160px;
+    padding-bottom: 159px;
+    background: #171717;
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 50px;
+        margin-bottom: 60px;
+        color: #FFFFFF;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-gap: 38px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        grid-gap: 25px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
 }
