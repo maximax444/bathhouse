@@ -1,0 +1,123 @@
+.serts {
+    height: 1261px;
+    overflow: hidden;
+    padding: 160px 0;
+    background: rgba(196, 196, 196, 0.13);
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 50px;
+        color: #181918;
+    }
+
+    &__arrows {
+        width: 156px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__prev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding-right: 3px;
+        padding-top: 1px;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 0px;
+            height: 64px;
+            background: url('../img/home/reviews-arrow-after2.svg') center left no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: -2px;
+            top: 50%;
+            margin-top: -32px;
+            @include trs;
+        }
+
+        &:hover::after {
+            width: 32px;
+        }
+    }
+
+    &__next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding-left: 3px;
+        padding-top: 1px;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 0px;
+            height: 64px;
+            background: url('../img/home/reviews-arrow-after.svg') center right no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: -2px;
+            top: 50%;
+            margin-top: -32px;
+            @include trs;
+        }
+
+        &:hover::after {
+            width: 32px;
+        }
+    }
+
+    &__block {
+        width: 458px;
+        height: 820px;
+        @include trs;
+        display: flex;
+        align-items: center;
+        opacity: 0.5;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__slider {
+        height: 820px;
+
+        &-wrap {
+            height: 820px;
+        }
+
+        .owl-stage-outer {
+            overflow: visible;
+        }
+
+        .center {
+
+            .serts__block {
+                width: 554px;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -46,6 +46,30 @@ $(document).ready(function () {
             }
         }
     });
+    var sertsSlider = $('.serts__slider').owlCarousel({
+        smartSpeed: 800,
+        loop: true,
+        margin: 30,
+        items: 3,
+        center: true,
+        dots: false,
+        autoWidth: true,
+        responsive: {
+            0: {
+                margin: 20
+            },
+            550: {
+                margin: 30
+            }
+        }
+    });
+    $('.serts__next').click(function () {
+        sertsSlider.trigger('next.owl.carousel');
+    });
+
+    $('.serts__prev').click(function () {
+        sertsSlider.trigger('prev.owl.carousel');
+    });
     $('.reviews__next').click(function () {
         reviewsSlider.trigger('next.owl.carousel');
     });
