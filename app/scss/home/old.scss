@@ -948,7 +948,7 @@ h1 {
 
 .menu {
     right: -280px;
-    transition: all, 0.3s;
+    @include trs;
     display: block;
     background: #000000;
     box-sizing: border-box;
@@ -1258,7 +1258,7 @@ h1 {
 
     .banners .owl-item {
         opacity: 0.3;
-        transition: all, 0.3s;
+        @include trs;
     }
 
     .banners .owl-item.active {

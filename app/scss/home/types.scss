@@ -40,7 +40,7 @@
 }
 
 a {
-    transition: all 0.3s;
+    @include trs;
 }
 
 .home-ready {
@@ -157,7 +157,7 @@ a {
         font-size: 15px;
         line-height: 20px;
         color: #FFFFFF;
-        transition: all 0.3s;
+        @include trs;
 
         &:hover {
             background-color: #d24700;
@@ -282,7 +282,7 @@ a {
             background: #F15E13;
             border-radius: 10px;
             margin-left: 15px;
-            transition: all 0.3s;
+            @include trs;
         }
     }
 
@@ -312,7 +312,7 @@ a {
         font-size: 15px;
         line-height: 20px;
         color: #FFFFFF;
-        transition: all 0.3s;
+        @include trs;
         margin-top: 32px;
 
         &:hover {
@@ -368,7 +368,7 @@ a {
         img {
             width: 100%;
             height: 100%;
-            transition: all 0.3s;
+            @include trs;
             object-fit: cover;
         }
     }
@@ -390,7 +390,7 @@ a {
             background: #F15E13;
             border-radius: 10px;
             margin-left: 15px;
-            transition: all 0.3s;
+            @include trs;
         }
     }
 

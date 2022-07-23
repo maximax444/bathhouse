@@ -84,7 +84,7 @@
             background: #F15E13;
             border-radius: 10px;
             margin-left: 15px;
-            transition: all 0.3s;
+            @include trs;
         }
     }
 
@@ -100,7 +100,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: all 0.3s;
+            @include trs;
         }
 
         &::before {
