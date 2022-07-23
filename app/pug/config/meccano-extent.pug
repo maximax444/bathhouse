@@ -1,0 +1,51 @@
+.meccano__mass.active
+
+	.meccano__title Создание уникального чана
+
+	.meccano__basis
+
+		.meccano__left
+
+			img(src='img/generate/meccano-vat.png' class='meccano__img' alt='img')
+
+		.meccano__right
+
+			.meccano__bulk
+
+				.meccano__higher
+
+					.meccano__topic Выберите размер банного чана
+
+					.extent
+
+						mixin extent(num, walls, person, diameter)
+
+							.extent__variant
+
+								input(type='radio' name='meccano-extent' id="meccano-extent-" + num +"")
+
+								label.extent__label(for="meccano-extent-" + num +"")
+
+									img(src='img/generate/meccano/meccano-size-1.jpg' class='extent__image' alt='img')
+
+									span.extent__walls=[walls]
+
+									span.extent__person=[person]
+
+									span.extent__diameter=[diameter]
+
+									span.extent__check.meccano__check
+
+										svg.svg-icon
+
+											use(xlink:href="img/sprite.svg#check")
+
+						+extent('1', '6 граней', '4 человека', 'Диаметр - 1650 мм.')
+
+						+extent('2', '8 граней', '6 человек', 'Диаметр - 1850 мм.')
+
+						+extent('3', '10 граней', '10 человек', 'Диаметр - 2250 мм.')
+
+				.meccano__sailing
+
+					.meccano__next ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg>

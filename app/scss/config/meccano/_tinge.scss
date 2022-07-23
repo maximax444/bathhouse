@@ -1,0 +1,225 @@
+.tinge{
+	padding-top: 23px;
+	&__group{
+		padding-top: 5px;
+		&:not(:last-child){
+			padding-bottom: 31px;
+		}
+	}
+	&__topic{
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 20px;
+		color: #181918;
+	}
+	&__set{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		padding-top: 8px;
+		margin-left: -13px;
+	}
+	&__variant{
+		display: flex;
+		position: relative;
+		margin-top: 15px;
+		margin-left: 15px;
+		input{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: -1;
+			&:checked{
+				& + .tinge__label{
+					&:after{
+						opacity: 1;
+					}
+					.tinge__check{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	&__label{
+		display: block;
+		cursor: pointer;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 110%;
+			height: 110%;
+			border: 1px solid #F15E13;
+			border-radius: 50%;
+			opacity: 0;
+			@include trs;
+		}
+	}
+	&__item{
+		display: block;
+		min-width: 57px;
+		max-width: 57px;
+		height: 57px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	&__check{
+		opacity: 0;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background: #F15E13;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		@include trs;
+		.svg-icon{
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			padding: 3px;
+			fill: #FFFFFF;
+		}
+	}
+	&__caudal{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		padding-top: 8px;
+		margin-left: -13px;
+	}
+	&__add{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		margin-top: 13px;
+		margin-left: 13px;
+		min-width: 57px;
+		max-width: 57px;
+		height: 57px;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 0.5px solid;
+		border-color: rgba(0, 0, 0, 0.3);
+		@include trs;
+		&:hover{
+			border-color: #F15E13;
+			.svg-icon{
+				fill: #F15E13;
+			}
+		}
+		.svg-icon{
+			width: 20px;
+			height: 20px;
+			fill: #C4C4C4;
+			@include trs;
+		}
+	}
+}
+
+.peculiar{
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 349px;
+	width: 100%;
+	background: #F6F6F6;
+	border-radius: 2px;
+	padding: 26px 30px 20px 32px;
+	&__close{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 24px;
+		height: 24px;
+		display: inline-flex;
+		cursor: pointer;
+		opacity: 0.5;
+		@include trs;
+		&:hover{
+			opacity: 1;
+		}
+		.svg-icon{
+			width: 100%;
+			height: 100%;
+			fill: #121312;
+		}
+	}
+	&__title{
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 26px;
+		color: #121312;
+		padding-right: 60px;
+	}
+	&__picker{
+		padding-top: 25px;
+	}
+	&__dyad{
+		padding-top: 36px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	&__own{
+		min-width: 68px;
+		max-width: 68px;
+		height: 68px;
+		display: block;
+		border-radius: 50%;
+	}
+	&__beside{
+		padding-left: 26px;
+		padding-top: 3px;
+	}
+	&__property{
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: rgba(24, 25, 24, 0.5);
+		padding-bottom: 7px;
+	}
+	&__value{
+		cursor: default;
+		min-width: 130px;
+		background: #FFFFFF;
+		border-radius: 2px;
+		font-family: 'TT Prosto Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: #121312;
+		padding: 9px 10px;
+	}
+	&__btn{
+		cursor: pointer;
+		background: #F15E13;
+		border-radius: 2px;
+		margin-top: 35px;
+		display: block;
+		width: 100%;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 20px 10px;
+		@include trs;
+		&:hover{
+			background: #d24700;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+.request{
+	&__wrapper{
+		position: relative;
+		max-width: 1920px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__mass{
+		max-height: 799px;
+		height: 62vw;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		max-width: 60%;
+		padding-top: 24px;
+		padding-bottom: 48px;
+		@media (max-width: $max-sm) {
+			display: block;
+			height: auto;
+			max-height: none;
+			max-width: 100%;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 48px;
+		color: #0E0D0D;
+		@media (max-width: $max-sm) {
+			font-size: 22px;
+			line-height: 32px;
+		}
+	}
+	&__text{
+		padding-top: 26px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			padding-top: 20px;
+			font-size: 13px;
+			line-height: 25px;
+		}
+	}
+	&__set{
+		padding-top: 34px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-left: -20px;
+		max-width: 540px;
+		@media (max-width: $max-sm) {
+			margin-left: 0;
+			padding-top: 22px;
+		}
+	}
+	&__unit{
+		padding-left: 20px;
+		padding-bottom: 20px;
+		width: 100%;
+		@media (max-width: $max-sm) {
+			padding-left: 0;
+		}
+		&:nth-child(1){
+			width: 50%;
+			@media (max-width: $max-sm) {
+				width: 100%;
+			}
+		}
+		&:nth-child(2){
+			width: 50%;
+			@media (max-width: $max-sm) {
+				width: 100%;
+			}
+		}
+		&:nth-child(3){
+			width: 68.6%;
+			@media (max-width: $max-sm) {
+				width: 100%;
+			}
+		}
+	}
+	&__agreement{
+		padding-top: 12px;
+		padding-bottom: 14px;
+		max-width: 400px;
+		@media (max-width: $max-sm) {
+			padding-top: 4px;
+		}
+	}
+	&__btn{
+		padding-top: 42px;
+		@media (max-width: $max-sm) {
+			padding-top: 15px;
+		}
+		.btn_orange{
+			min-width: 299px;
+			@media (max-width: $max-sm) {
+				min-width: 240px;
+			}
+		}
+	}
+	&__image{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		max-width: 39%;
+		object-fit: cover;
+		object-position: center left;
+		@media (max-width: $max-sm) {
+			position: relative;
+			max-width: none;
+			width: 100%;
+		}
+	}
+	&__thanks{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+	}
+}

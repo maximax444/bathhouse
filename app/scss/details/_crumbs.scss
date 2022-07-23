@@ -1,0 +1,65 @@
+.crumbs{
+	&:after {
+		content: "";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+	&__unit{
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 400;
+		padding-right: 12px;
+		margin-right: 4px;
+		position: relative;
+		line-height: 20px;
+		float: left;
+		@media (max-width: $max-sm) {
+			font-size: 13px;
+			line-height: 18px;
+		}
+		&:after{
+			content: '/';
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+			color: inherit;
+			opacity: 0.5;
+		}
+		&:last-child{
+			padding-right: 0;
+			margin-right: 0;
+			float: none;
+			&:after{
+				display: none;
+			}
+		}
+	}
+	&__link{
+		color: inherit;
+		opacity: 0.5;
+		text-decoration: none;
+		display: block;
+		z-index: 2;
+		position: relative;
+		@include trs;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	&__current{
+		color: inherit;
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 400;
+		cursor: default;
+		display: block;
+		@media (max-width: $max-sm) {
+			font-size: 13px;
+			line-height: 18px;
+		}
+	}
+}

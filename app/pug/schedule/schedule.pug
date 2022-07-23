@@ -1,0 +1,41 @@
+.schedule
+
+	.container
+
+		h2.schedule__title Каталог мангалов в виде животных
+
+		.schedule__body
+
+			mixin further(img, name, price, priceOld)
+
+				.schedule__box
+
+					.schedule__picture
+
+						img(src="img/generate/schedule" + img + ".jpg" alt="img")
+
+					.schedule__name=[name]
+
+					.schedule__dyad
+
+						.schedule__price=[price]
+
+						.schedule__price-old=[priceOld]
+
+					.schedule__btn
+
+						a(href='#' class='btn_orange') ПОДРОБНЕЕ
+
+			.schedule__set
+
+				+further(1, 'Модель огнеупорного мангала “Олень”', '28 900 Р', '31 900 Р')
+
+				+further(1, 'Модель огнеупорного мангала “Олень”', '39 900 Р')
+
+				+further(1, 'Модель огнеупорного мангала “Олень”', '28 900 Р')
+
+				+further(1, 'Модель огнеупорного мангала “Олень”', '35 900 Р')
+
+				+further(1, 'Модель огнеупорного мангала “Олень”', '29 900 Р')
+
+				+further(1, 'Модель огнеупорного мангала “Олень”', '35 900 Р')

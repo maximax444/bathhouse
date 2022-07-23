@@ -1,0 +1,45 @@
+.meccano__mass
+
+	.meccano__title Создание уникального чана
+
+	.meccano__basis
+
+		.meccano__left
+
+			img(src='img/generate/meccano-vat.png' class='meccano__img' alt='img')
+
+		.meccano__right
+
+			.meccano__bulk
+
+				.meccano__higher
+
+					.meccano__topic Выберите цвет дерева
+
+					- let wood = 1;
+
+						.wood
+
+							while wood <= 24
+
+								.wood__variant
+
+									input(type="radio" name='meccano-wood' id="meccano-wood-" + wood +"")
+
+									label.wood__label(for="meccano-wood-" + wood +"")
+
+										img(src='img/generate/wood1.jpg' class='wood__image' alt='img') 
+
+										span.wood__check
+
+											svg.svg-icon
+
+												use(xlink:href="img/sprite.svg#check")
+
+								- wood += 1;
+
+				.meccano__sailing
+
+					.meccano__back НАЗАД
+
+					.meccano__next ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg>

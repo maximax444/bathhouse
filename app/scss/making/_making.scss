@@ -1,0 +1,74 @@
+.making{
+	background: rgba(245, 245, 245, 0.5);
+	padding-top: 87px;
+	padding-bottom: 160px;
+	@media (max-width: $max-sm) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__dyad{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		@media (max-width: $max-sm) {
+			display: block;
+		}
+	}
+	&__content{
+		width: 51.1%;
+		padding-top: 30px;
+		padding-right: 70px;
+		@media (max-width: $max-sm) {
+			width: 100%;
+			padding-right: 0;
+			padding-top: 0;
+			padding-bottom: 40px;
+		}
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 50px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			font-size: 19px;
+			line-height: 30px;
+		}
+	}
+	&__text{
+		max-width: 450px;
+		padding-top: 43px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 35px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			padding-top: 30px;
+			font-size: 13px;
+			line-height: 25px;
+		}
+	}
+	&__beside{
+		width: 48.9%;
+		@media (max-width: $max-sm) {
+			width: 100%;
+		}
+	}
+	&__video{
+		display: block;
+		text-decoration: none;
+		position: relative;
+		&-image{
+			max-width: 100%;
+		}
+	}
+	&__btn{
+		padding-top: 43px;
+		@media (max-width: $max-sm) {
+			padding-top: 30px;
+		}
+		.btn_orange{
+			min-width: 262px;
+		}
+	}
+}

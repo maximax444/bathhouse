@@ -1,0 +1,53 @@
+.meccano__mass
+
+	.meccano__title Создание уникального чана
+
+	.meccano__basis
+
+		.meccano__left
+
+			img(src='img/generate/meccano-vat.png' class='meccano__img' alt='img')
+
+		.meccano__right
+
+			.meccano__bulk
+
+				.meccano__higher
+
+					.meccano__topic Выберите тип установки
+
+					mixin setting(num, name, text)
+
+						.setting__variant
+
+							input(type='radio' name='meccano-setting' id="meccano-setting-" + num +"")
+
+							label.setting__label(for="meccano-setting-" + num +"")
+
+								img(src='img/generate/meccano/meccano-setting-1.jpg' class='setting__image' alt='img')
+
+								span.setting__content
+
+									span.setting__name=[name]
+
+									span.setting__text=[text]
+
+									span.setting__check.meccano__check
+
+										svg.svg-icon
+
+											use(xlink:href="img/sprite.svg#check")
+
+					.setting
+
+						.setting__kit
+
+							+setting(1, 'Подставка', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом. Мы производим банные  с подогревом как на дровах, так и с')
+
+							+setting(2, 'Бревна', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом. Мы производим банные  с подогревом как на дровах, так и с')
+
+				.meccano__sailing
+
+					.meccano__back НАЗАД
+
+					.meccano__next ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg>

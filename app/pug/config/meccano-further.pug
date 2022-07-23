@@ -1,0 +1,57 @@
+.meccano__mass
+
+	.meccano__title Создание уникального чана
+
+	.meccano__basis
+
+		.meccano__left
+
+			img(src='img/generate/meccano-vat.png' class='meccano__img' alt='img')
+
+		.meccano__right
+
+			.meccano__bulk
+
+				.meccano__higher
+
+					.meccano__topic Выберите дополнительные товары
+
+					mixin further(num, name, text)
+
+						.further__variant
+
+							input(type='radio' name='meccano-further' id="meccano-further-" + num +"")
+
+							label.further__label(for="meccano-further-" + num +"")
+
+								img(src='img/generate/meccano/meccano-further-1.jpg' class='further__image' alt='img')
+
+								span.further__content
+
+									span.further__name=[name]
+
+									span.further__text=[text]
+
+									span.further__check.meccano__check
+
+										svg.svg-icon
+
+											use(xlink:href="img/sprite.svg#check")
+
+					.further
+
+						.further__kit
+
+							+further(1, 'Ветрозащита', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+							+further(2, 'Гидромассаж', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+							+further(3, 'Весла', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+							+further(4, 'Ветрозащита', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+				.meccano__sailing
+
+					.meccano__back НАЗАД
+
+					.meccano__next ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg>

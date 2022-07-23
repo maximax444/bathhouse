@@ -1,0 +1,115 @@
+.schedule{
+	padding-top: 157px;
+	@media (max-width: $max-sm) {
+		padding-top: 50px;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 50px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			font-size: 19px;
+			line-height: 30px;
+		}
+	}
+	&__body{
+		padding-top: 54px;
+		@media (max-width: $max-sm) {
+			padding-top: 40px;
+		}
+	}
+	&__set{
+		margin-left: -47px;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		@media (max-width: $max-sm) {
+			margin-left: -10px;
+		}
+	}
+	&__box{
+		width: 25%;
+		padding-left: 47px;
+		padding-bottom: 57px;
+		@media (max-width: $max-sm) {
+			width: 50%;
+			padding-left: 10px;
+			padding-bottom: 40px;
+		}
+	}
+	&__picture{
+		padding-bottom: 93.6%;
+		position: relative;
+		img{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	&__name{
+		padding-top: 23px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			padding-top: 15px;
+			font-size: 11px;
+			line-height: 17px;
+		}
+	}
+	&__dyad{
+		padding-top: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		@media (max-width: $max-sm) {
+			display: block;
+			padding-top: 0;
+			margin-top: 10px;
+			min-height: 50px;
+		}
+	}
+	&__price{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&-old{
+			margin-left: 23px;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 26px;
+			color: #A0A0A0;
+			text-decoration: line-through;
+			@media (max-width: $max-sm) {
+				margin-left: 0;
+				margin-top: 2px;
+				font-size: 14px;
+				line-height: 22px;
+			}
+		}
+	}
+	&__btn{
+		padding-top: 27px;
+		@media (max-width: $max-sm) {
+			padding-top: 12px;
+		}
+		.btn_orange{
+			min-width: 131px;
+			padding: 15px 10px;
+			@media (max-width: $max-sm) {
+				min-width: 120px;
+				padding: 12px 10px;
+			}
+		}
+	}
+}

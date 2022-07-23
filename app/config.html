@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- Head-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Сибирский Банный Чан</title>
+  </head>
+  <!-- Head-->
+  <body>
+    <div class="wrapper">
+      <div class="meccano">
+        <div class="container">
+          <div class="meccano__head">
+            <div class="meccano__step active"></div>
+            <div class="meccano__step"></div>
+            <div class="meccano__step"></div>
+            <div class="meccano__step"></div>
+            <div class="meccano__step"></div>
+            <div class="meccano__step"></div>
+            <div class="meccano__step"></div>
+            <div class="meccano__step"></div>
+          </div>
+          <div class="meccano__result">Шаг <span>1</span> из 8</div>
+          <div class="meccano__body">
+            <div class="meccano__mass active">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите размер банного чана</div>
+                      <div class="extent">
+                                                <div class="extent__variant">
+                                                  <input type="radio" name="meccano-extent" id="meccano-extent-1">
+                                                  <label class="extent__label" for="meccano-extent-1"><img class="extent__image" src="img/generate/meccano/meccano-size-1.jpg" alt="img"><span class="extent__walls">6 граней</span><span class="extent__person">4 человека</span><span class="extent__diameter">Диаметр - 1650 мм.</span><span class="extent__check meccano__check">
+                                                      <svg class="svg-icon">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                      </svg></span></label>
+                                                </div>
+                                                <div class="extent__variant">
+                                                  <input type="radio" name="meccano-extent" id="meccano-extent-2">
+                                                  <label class="extent__label" for="meccano-extent-2"><img class="extent__image" src="img/generate/meccano/meccano-size-1.jpg" alt="img"><span class="extent__walls">8 граней</span><span class="extent__person">6 человек</span><span class="extent__diameter">Диаметр - 1850 мм.</span><span class="extent__check meccano__check">
+                                                      <svg class="svg-icon">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                      </svg></span></label>
+                                                </div>
+                                                <div class="extent__variant">
+                                                  <input type="radio" name="meccano-extent" id="meccano-extent-3">
+                                                  <label class="extent__label" for="meccano-extent-3"><img class="extent__image" src="img/generate/meccano/meccano-size-1.jpg" alt="img"><span class="extent__walls">10 граней</span><span class="extent__person">10 человек</span><span class="extent__diameter">Диаметр - 2250 мм.</span><span class="extent__check meccano__check">
+                                                      <svg class="svg-icon">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                      </svg></span></label>
+                                                </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите тип нагрева</div>
+                      <div class="heat">
+                        <div class="heat__kit">
+                                                <div class="heat__variant">
+                                                  <input type="radio" name="meccano-heat" id="meccano-heat-1">
+                                                  <label class="heat__label" for="meccano-heat-1"><img class="heat__image" src="img/generate/meccano/meccano-heat-1.jpg" alt="img"><span class="heat__content"><span class="heat__name">Печь с водяной рубашкой</span><span class="heat__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="heat__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="heat__variant">
+                                                  <input type="radio" name="meccano-heat" id="meccano-heat-2">
+                                                  <label class="heat__label" for="meccano-heat-2"><img class="heat__image" src="img/generate/meccano/meccano-heat-1.jpg" alt="img"><span class="heat__content"><span class="heat__name">Стандартная печь</span><span class="heat__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="heat__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="heat__variant">
+                                                  <input type="radio" name="meccano-heat" id="meccano-heat-3">
+                                                  <label class="heat__label" for="meccano-heat-3"><img class="heat__image" src="img/generate/meccano/meccano-heat-1.jpg" alt="img"><span class="heat__content"><span class="heat__name">Печь Фурако</span><span class="heat__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="heat__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__back">НАЗАД</div>
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите тип установки</div>
+                      <div class="setting">
+                        <div class="setting__kit">
+                                                <div class="setting__variant">
+                                                  <input type="radio" name="meccano-setting" id="meccano-setting-1">
+                                                  <label class="setting__label" for="meccano-setting-1"><img class="setting__image" src="img/generate/meccano/meccano-setting-1.jpg" alt="img"><span class="setting__content"><span class="setting__name">Подставка</span><span class="setting__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом. Мы производим банные  с подогревом как на дровах, так и с</span><span class="setting__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="setting__variant">
+                                                  <input type="radio" name="meccano-setting" id="meccano-setting-2">
+                                                  <label class="setting__label" for="meccano-setting-2"><img class="setting__image" src="img/generate/meccano/meccano-setting-1.jpg" alt="img"><span class="setting__content"><span class="setting__name">Бревна</span><span class="setting__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом. Мы производим банные  с подогревом как на дровах, так и с</span><span class="setting__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__back">НАЗАД</div>
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите цвет дерева</div>
+                      <div class="wood">
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-1">
+                          <label class="wood__label" for="meccano-wood-1"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-2">
+                          <label class="wood__label" for="meccano-wood-2"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-3">
+                          <label class="wood__label" for="meccano-wood-3"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-4">
+                          <label class="wood__label" for="meccano-wood-4"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-5">
+                          <label class="wood__label" for="meccano-wood-5"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-6">
+                          <label class="wood__label" for="meccano-wood-6"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-7">
+                          <label class="wood__label" for="meccano-wood-7"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-8">
+                          <label class="wood__label" for="meccano-wood-8"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-9">
+                          <label class="wood__label" for="meccano-wood-9"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-10">
+                          <label class="wood__label" for="meccano-wood-10"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-11">
+                          <label class="wood__label" for="meccano-wood-11"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-12">
+                          <label class="wood__label" for="meccano-wood-12"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-13">
+                          <label class="wood__label" for="meccano-wood-13"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-14">
+                          <label class="wood__label" for="meccano-wood-14"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-15">
+                          <label class="wood__label" for="meccano-wood-15"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-16">
+                          <label class="wood__label" for="meccano-wood-16"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-17">
+                          <label class="wood__label" for="meccano-wood-17"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-18">
+                          <label class="wood__label" for="meccano-wood-18"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-19">
+                          <label class="wood__label" for="meccano-wood-19"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-20">
+                          <label class="wood__label" for="meccano-wood-20"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-21">
+                          <label class="wood__label" for="meccano-wood-21"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-22">
+                          <label class="wood__label" for="meccano-wood-22"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-23">
+                          <label class="wood__label" for="meccano-wood-23"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                        <div class="wood__variant">
+                          <input type="radio" name="meccano-wood" id="meccano-wood-24">
+                          <label class="wood__label" for="meccano-wood-24"><img class="wood__image" src="img/generate/wood1.jpg" alt="img"><span class="wood__check">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                              </svg></span></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__back">НАЗАД</div>
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите цвет чана</div>
+                      <div class="tinge">
+                        <div class="tinge__kit">
+                          <div class="tinge__group">
+                            <div class="tinge__topic">Популярные цвета</div>
+                            <div class="tinge__set">
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-1">
+                                                      <label class="tinge__label" for="meccano-color-1"><span class="tinge__item" style="background: #FFDA82"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-2">
+                                                      <label class="tinge__label" for="meccano-color-2"><span class="tinge__item" style="background: #FFA054"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-3">
+                                                      <label class="tinge__label" for="meccano-color-3"><span class="tinge__item" style="background: #F17B53"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-4">
+                                                      <label class="tinge__label" for="meccano-color-4"><span class="tinge__item" style="background: #7A4686"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-5">
+                                                      <label class="tinge__label" for="meccano-color-5"><span class="tinge__item" style="background: #F3649A"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-6">
+                                                      <label class="tinge__label" for="meccano-color-6"><span class="tinge__item" style="background: #FEBBDC"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-7">
+                                                      <label class="tinge__label" for="meccano-color-7"><span class="tinge__item" style="background: #F9BAAF"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-8">
+                                                      <label class="tinge__label" for="meccano-color-8"><span class="tinge__item" style="background: #374260"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-9">
+                                                      <label class="tinge__label" for="meccano-color-9"><span class="tinge__item" style="background: #306E69"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-10">
+                                                      <label class="tinge__label" for="meccano-color-10"><span class="tinge__item" style="background: #6BB7CF"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-11">
+                                                      <label class="tinge__label" for="meccano-color-11"><span class="tinge__item" style="background: #CA6269"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-12">
+                                                      <label class="tinge__label" for="meccano-color-12"><span class="tinge__item" style="background: #3E1317"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-13">
+                                                      <label class="tinge__label" for="meccano-color-13"><span class="tinge__item" style="background: #6C1B1D"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                                                    <div class="tinge__variant">
+                                                      <input type="radio" name="meccano-color" id="meccano-color-14">
+                                                      <label class="tinge__label" for="meccano-color-14"><span class="tinge__item" style="background: #E88365"></span><span class="tinge__check">
+                                                          <svg class="svg-icon">
+                                                            <use xlink:href="img/sprite.svg#check"></use>
+                                                          </svg></span></label>
+                                                    </div>
+                            </div>
+                          </div>
+                          <div class="tinge__group">
+                            <div class="tinge__topic">Выбрать другой цвет</div>
+                            <div class="tinge__caudal">
+                              <div class="tinge__add">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#tinge-add"></use>
+                                </svg>
+                              </div>
+                              <div class="tinge__variant hide">
+                                <input type="radio" name="meccano-color" id="meccano-color-own">
+                                <label class="tinge__label" for="meccano-color-own"><span class="tinge__item"></span><span class="tinge__check">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#check"></use>
+                                    </svg></span></label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="peculiar">
+                          <div class="peculiar__close popup__close">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#popup-close"></use>
+                            </svg>
+                          </div>
+                          <div class="peculiar__title">Выбрать уникальный цвет банного чана</div>
+                          <div class="peculiar__picker"></div>
+                          <div class="peculiar__dyad">
+                            <div class="peculiar__own"></div>
+                            <div class="peculiar__beside">
+                              <div class="peculiar__property">Код цвета HEX</div>
+                              <div class="peculiar__value"></div>
+                            </div>
+                          </div>
+                          <div class="peculiar__btn">ВЫБРАТЬ ЦВЕТ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__back">НАЗАД</div>
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите дополнительные товары</div>
+                      <div class="further">
+                        <div class="further__kit">
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-1">
+                                                  <label class="further__label" for="meccano-further-1"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Ветрозащита</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-2">
+                                                  <label class="further__label" for="meccano-further-2"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Гидромассаж</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-3">
+                                                  <label class="further__label" for="meccano-further-3"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Весла</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-4">
+                                                  <label class="further__label" for="meccano-further-4"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Ветрозащита</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__back">НАЗАД</div>
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Создание уникального чана</div>
+              <div class="meccano__basis">
+                <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                <div class="meccano__right">
+                  <div class="meccano__bulk">
+                    <div class="meccano__higher">
+                      <div class="meccano__topic">Выберите дополнительные товары</div>
+                      <div class="further">
+                        <div class="further__kit">
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-2-1">
+                                                  <label class="further__label" for="meccano-further-2-1"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Ветрозащита</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-2-2">
+                                                  <label class="further__label" for="meccano-further-2-2"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Гидромассаж</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                                                <div class="further__variant">
+                                                  <input type="radio" name="meccano-further" id="meccano-further-2-3">
+                                                  <label class="further__label" for="meccano-further-2-3"><img class="further__image" src="img/generate/meccano/meccano-further-1.jpg" alt="img"><span class="further__content"><span class="further__name">Весла</span><span class="further__text">Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.</span><span class="further__check meccano__check">
+                                                        <svg class="svg-icon">
+                                                          <use xlink:href="img/sprite.svg#check"></use>
+                                                        </svg></span></span></label>
+                                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="meccano__sailing">
+                      <div class="meccano__back">НАЗАД</div>
+                      <div class="meccano__next">ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meccano__mass">
+              <div class="meccano__title">Ваш банный чан готов!</div>
+              <div class="meccano__basis">
+                <form class="form">
+                  <div class="form__body meccano__form">
+                    <div class="meccano__left"><img class="meccano__img" src="img/generate/meccano-vat.png" alt="img"></div>
+                    <div class="meccano__right">
+                      <div class="meccano__bulk">
+                        <div class="meccano__higher">
+                          <div class="meccano__topic">Заполните форму и мы отправим вам подробный расчет вашего чана!</div>
+                          <div class="meccano__topicsub">Мы производим банные чаны с подогревом <br>как на дровах, так и с электро-подогревом.</div>
+                          <div class="claim">
+                            <div class="claim__set">
+                              <div class="claim__unit">
+                                <input class="form__field" type="text" placeholder="Ваше имя" required>
+                              </div>
+                              <div class="claim__unit">
+                                <input class="form__field" type="tel" placeholder="+7 (___)-___-__-__" required>
+                              </div>
+                              <div class="claim__unit">
+                                <input class="form__field" type="email" placeholder="Ваш e-mail" required>
+                              </div>
+                            </div>
+                            <div class="claim__agreement">
+                              <label class="checkbox">
+                                <input type="checkbox" required><span class="checkbox__part"><span class="checkbox__square">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#check"></use>
+                                    </svg></span><span class="checkbox__text">Оставляя свои данные на данном сайте, я принимаю условия <a href='#'>политики конфиденциальности</a></span></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="meccano__sailing">
+                          <div class="meccano__back">НАЗАД</div>
+                          <button class="meccano__btn" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__thanks meccano__thanks">
+                    <div class="meccano__left"><img class="meccano__image" src="img/generate/meccano-garth.jpg" alt="img"></div>
+                    <div class="meccano__right">
+                      <div class="meccano__thanks-content">
+                        <div class="meccano__thanks-check">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                          </svg>
+                        </div>
+                        <div class="meccano__topic">Спасибо, форма расчета <br>успешно отправлена</div>
+                        <div class="meccano__topicsub">Наш оператор свяжеться с вами в течении 15 минут <br>и отправит вам подробный расчет вашего <br>Сибирского Банного Чана!</div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Script-->
+  </body>
+</html>

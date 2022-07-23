@@ -1,0 +1,116 @@
+.contacts{
+	background: rgba(245, 245, 245, 0.5);
+	padding-top: 90px;
+	@media (max-width: $max-sm) {
+		padding-top: 50px;
+	}
+	&__wrapper{
+		position: relative;
+	}
+	&__body{
+		pointer-events: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		@media (max-width: $max-sm) {
+			position: relative;
+		}
+	}
+	&__block{
+		background: #FFFFFF;
+		padding: 40px;
+		// height: 525px;
+		max-width: 498px;
+		pointer-events: all;
+		padding: 62px 130px 62px 66px;
+		@media (max-width: $max-sm) {
+			height: auto;
+			padding: 30px 20px 30px 30px;
+			margin: 0 -15px;
+		}
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 35px;
+		color: #181918;
+		@media (max-width: $max-sm) {
+			font-size: 19px;
+			line-height: 30px;
+		}
+	}
+	&__phone{
+		padding-top: 39px;
+		@media (max-width: $max-sm) {
+			padding-top: 30px;
+		}
+		a{
+			font-weight: 700;
+			font-size: 26.5px;
+			line-height: 30px;
+			color: #121312;
+			text-decoration: none;
+			@media (max-width: $max-sm) {
+				font-size: 22.5px;
+				line-height: 26px;
+			}
+		}
+		sub{
+			padding-top: 8px;
+			display: block;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 20px;
+			color: rgba(18, 19, 18, 0.5);
+			@media (max-width: $max-sm) {
+				font-size: 11px;
+				line-height: 18px;
+			}
+		}
+	}
+	&__address{
+		padding-top: 45px;
+		@media (max-width: $max-sm) {
+			padding-top: 30px;
+		}
+		sup{
+			display: block;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: rgba(18, 19, 18, 0.5);
+			padding-bottom: 8px;
+			@media (max-width: $max-sm) {
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
+		p{
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 30px;
+			color: #121312;
+			@media (max-width: $max-sm) {
+				font-size: 15px;
+				line-height: 24px
+			}
+		}
+	}
+	&__btn{
+		padding-top: 41px;
+		@media (max-width: $max-sm) {
+			padding-top: 30px;
+		}
+		.btn_orange{
+			min-width: 262px;
+			@media (max-width: $max-sm) {
+				min-width: 230px;
+			}
+		}
+	}
+}

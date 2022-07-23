@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'TT Prosto Sans';
+    src: url('../fonts/TTProstoSans.eot');
+    src: url('../fonts/TTProstoSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTProstoSans.woff2') format('woff2'),
+        url('../fonts/TTProstoSans.woff') format('woff'),
+        url('../fonts/TTProstoSans.ttf') format('truetype'),
+        url('../fonts/TTProstoSans.svg#TTProstoSans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'TT Prosto Sans';
+    src: url('../fonts/TTProstoSans-Bold.eot');
+    src: url('../fonts/TTProstoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTProstoSans-Bold.woff2') format('woff2'),
+        url('../fonts/TTProstoSans-Bold.woff') format('woff'),
+        url('../fonts/TTProstoSans-Bold.ttf') format('truetype'),
+        url('../fonts/TTProstoSans-Bold.svg#TTProstoSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

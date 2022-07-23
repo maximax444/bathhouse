@@ -1,0 +1,55 @@
+.meccano__mass
+
+	.meccano__title Создание уникального чана
+
+	.meccano__basis
+
+		.meccano__left
+
+			img(src='img/generate/meccano-vat.png' class='meccano__img' alt='img')
+
+		.meccano__right
+
+			.meccano__bulk
+
+				.meccano__higher
+
+					.meccano__topic Выберите тип нагрева
+
+					mixin heat(num, name, text)
+
+						.heat__variant
+
+							input(type='radio' name='meccano-heat' id="meccano-heat-" + num +"")
+
+							label.heat__label(for="meccano-heat-" + num +"")
+
+								img(src='img/generate/meccano/meccano-heat-1.jpg' class='heat__image' alt='img')
+
+								span.heat__content
+
+									span.heat__name=[name]
+
+									span.heat__text=[text]
+
+									span.heat__check.meccano__check
+
+										svg.svg-icon
+
+											use(xlink:href="img/sprite.svg#check")
+
+					.heat
+
+						.heat__kit
+
+							+heat(1, 'Печь с водяной рубашкой', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+							+heat(2, 'Стандартная печь', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+							+heat(3, 'Печь Фурако', 'Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом.')
+
+				.meccano__sailing
+
+					.meccano__back НАЗАД
+
+					.meccano__next ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg>

@@ -1,0 +1,125 @@
+.meccano__mass
+
+	.meccano__title Создание уникального чана
+
+	.meccano__basis
+
+		.meccano__left
+
+			img(src='img/generate/meccano-vat.png' class='meccano__img' alt='img')
+
+		.meccano__right
+
+			.meccano__bulk
+
+				.meccano__higher
+
+					.meccano__topic Выберите цвет чана
+
+					mixin tinge(num, color)
+
+						.tinge__variant
+
+							input(type='radio' name='meccano-color' id="meccano-color-" + num +"")
+
+							label.tinge__label(for="meccano-color-" + num +"")
+
+								span.tinge__item(style="background: "+ color +"")
+
+								span.tinge__check
+
+									svg.svg-icon
+
+										use(xlink:href="img/sprite.svg#check")
+
+					.tinge
+
+						.tinge__kit
+
+							.tinge__group
+
+								.tinge__topic Популярные цвета
+
+								.tinge__set
+
+									+tinge(1, '#FFDA82')
+
+									+tinge(2, '#FFA054')
+
+									+tinge(3, '#F17B53')
+
+									+tinge(4, '#7A4686')
+
+									+tinge(5, '#F3649A')
+
+									+tinge(6, '#FEBBDC')
+
+									+tinge(7, '#F9BAAF')
+
+									+tinge(8, '#374260')
+
+									+tinge(9, '#306E69')
+
+									+tinge(10, '#6BB7CF')
+
+									+tinge(11, '#CA6269')
+
+									+tinge(12, '#3E1317')
+
+									+tinge(13, '#6C1B1D')
+
+									+tinge(14, '#E88365')
+
+							.tinge__group
+
+								.tinge__topic Выбрать другой цвет
+
+								.tinge__caudal
+
+									.tinge__add
+
+										svg.svg-icon
+
+											use(xlink:href="img/sprite.svg#tinge-add")
+
+									.tinge__variant.hide
+
+										input(type='radio' name='meccano-color' id="meccano-color-own")
+
+										label.tinge__label(for="meccano-color-own")
+
+											span.tinge__item()
+
+											span.tinge__check
+
+												svg.svg-icon
+
+													use(xlink:href="img/sprite.svg#check")
+
+						.peculiar
+
+							.peculiar__close.popup__close
+								svg.svg-icon
+									use(xlink:href="img/sprite.svg#popup-close")
+
+							.peculiar__title Выбрать уникальный цвет банного чана
+
+							.peculiar__picker
+
+							.peculiar__dyad
+
+								.peculiar__own
+
+								.peculiar__beside
+
+									.peculiar__property Код цвета HEX
+
+									.peculiar__value
+
+							.peculiar__btn ВЫБРАТЬ ЦВЕТ
+
+				.meccano__sailing
+
+					.meccano__back НАЗАД
+
+					.meccano__next ДАЛЕЕ <svg class='svg-icon'><use xlink:href="img/sprite.svg#meccano-next"></use></svg>

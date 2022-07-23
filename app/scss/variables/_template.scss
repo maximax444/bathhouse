@@ -1,0 +1,37 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'TT Prosto Sans';
+}
+
+.container{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: $max-xl) {
+		max-width: 960px;
+	}
+	@media (max-width: $max-lg) {
+		max-width: 720px;
+	}
+	@media (max-width: $max-md) {
+		max-width: 540px;
+	}
+	@media (max-width: $max-sm) {
+		max-width: 100%;
+	}
+}
+
+.map{
+	width: 100%;
+	background-color: #be4;
+	height: 900px;
+	@media (max-width: $max-sm) {
+		height: 300px;
+	}
+}

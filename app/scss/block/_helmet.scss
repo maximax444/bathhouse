@@ -1,0 +1,33 @@
+.helmet{
+	padding-top: 66px;
+	background: rgba(245, 245, 245, 0.5);
+	@media (max-width: $max-sm) {
+		padding-top: 40px;
+	}
+	&__crumbs{
+		color: rgba(18, 19, 18, 1);
+	}
+	&__title{
+		padding-top: 21px;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 50px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			font-size: 36px;
+			line-height: 48px;
+		}
+	}
+	&__text{
+		padding-top: 23px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			padding-top: 15px;
+			font-size: 14px;
+			line-height: 26px;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+.unusual{
+	position: relative;
+	z-index: 2;
+	padding-top: 155px;
+	@media (max-width: $max-sm) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 50px;
+		color: #0E0D0D;
+		padding-bottom: 46px;
+		@media (max-width: $max-sm) {
+			font-size: 22px;
+			line-height: 32px;
+			padding-bottom: 40px;
+		}
+	}
+	&__body{
+		background: #F5F5F5;
+		margin-right: -59px;
+		padding: 63px 48px 14px 92px;
+		@media (max-width: $max-sm) {
+			padding: 30px 20px 30px 20px;
+			margin-right: 0;
+		}
+	}
+	&__mass{
+		padding-top: 10px;
+		padding-bottom: 22px;
+	}
+	&__bulk{
+		background: #FFFFFF;
+		border-radius: 2px;
+		margin: 0 -30px 0 -30px;
+		padding: 63px 48px 14px 92px;
+	}
+	&__set{
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-left: -32px;
+	}
+	&__unit{
+		padding-left: 32px;
+		padding-bottom: 40px;
+		width: 25%;
+		@media (max-width: $max-sm) {
+			width: 100%;
+			&:last-child{
+				padding-bottom: 0;
+			}
+		}
+	}
+	&__image{
+		min-width: 145px;
+		max-width: 145px;
+		height: 145px;
+		margin-right: auto;
+		margin-bottom: 36px;
+		border-radius: 50%;
+		overflow: hidden;
+		@media (max-width: $max-sm) {
+			min-width: 100px;
+			max-width: 100px;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+	}
+	&__name{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 25px;
+		text-transform: uppercase;
+		color: #181918;
+	}
+	&__text{
+		max-width: 210px;
+		padding-top: 11px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 23px;
+		color: #121312;
+		@media (max-width: $max-sm) {
+			max-width: 100%;
+			br{
+				display: none;
+			}
+		}
+	}
+}

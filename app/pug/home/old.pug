@@ -1,0 +1,137 @@
+section.main 
+    .content
+        .main__photo
+            img.photo-full-size(src="img/bg/main-photo.jpg" alt="Фото")
+            .quality
+                i.quality__icon
+                p.quality__text
+                    strong 
+                        | Российские 
+                        br 
+                        | и Европейские
+                        | сертификаты 
+                        br 
+                        | соответствия
+        .main__left
+            h1 Рассчитайте стоимость своего банного чана
+            p.main__desc Мы производим банные чаны с подогревом как на дровах, так и с электро-подогревом. Наши изделия могут
+            .main__buttons
+                a.orange-btn(href="#") РАССЧИТАТЬ СТОИМОСТЬ
+                a.green-btn(href="#") ПОЛУЧИТЬ КАТАЛОГ
+            .main__statistics.spacer_top
+                .main__statistic
+                    p.main__statistic-title 50 ЛЕТ
+                    p.main__statistic-desc срок службы
+                .main__statistic
+                    p.main__statistic-title 10 ЛЕТ
+                    p.main__statistic-desc гарантия
+                .main__statistic
+                    p.main__statistic-title 3900 ЧАНОВ
+                    p.main__statistic-desc доставили по всему миру
+
+section.banners.content
+    .banners__slider.slider
+        .banners__slides-wrap
+            .banners__slides.owl-carousel
+                .banner
+                    .banner__text
+                        span.banner__tag АКЦИЯ
+                        p.banner__title
+                            | Бесплатная доставка
+                            br
+                            | в любую точку мира
+                        p.banner__sub-title только с 27.06 по 29.06
+                        p.banner__desc Подробности уточняйте у сотрудников отдела продаж.
+                        a.orange-btn.banner__link(href="#") подробнее
+                    img.banner__bg.photo-full-size(src="img/banners/item-1.jpg" alt="Фон")
+                .banner
+                    .banner__text
+                        span.banner__tag АКЦИЯ
+                        p.banner__title
+                            | Бесплатная доставка
+                            br
+                            | в любую точку мира
+                        p.banner__sub-title только с 27.06 по 29.06
+                        p.banner__desc Подробности уточняйте у сотрудников отдела продаж.
+                        a.orange-btn.banner__link(href="#") подробнее
+                    img.banner__bg.photo-full-size(src="img/banners/item-1.jpg" alt="Фон")
+        span.slider__prev
+            svg.svg-icon.icon-slider-prev.pos-center
+                use(xlink:href="img/sprite.svg#icon-slider-prev")
+        span.slider__next
+            svg.svg-icon.icon-slider-next.pos-center
+                use(xlink:href="img/sprite.svg#icon-slider-next")
+
+section.catalog.content
+    h2 Конфигуратор банного чана
+    p.block-decs Выберите подходящий размер чана
+    .catalog__list.flex-container
+        .catalog__item.col-3
+            .catalog__item-wrap
+                a.catalog__item-photo(href="#")
+                    span.catalog__count
+                        span.catalog__count-length 4
+                        i.catalog__count-icon.catalog__count-icon-1
+                    img.photo-full-size(src="img/catalog/item-1.jpg" alt="Фото")
+                .catalog__item-content
+                    a.catalog__item-title(href="#") Малый чан
+                    ul.catalog__params
+                        li.catalog__param
+                            span.catalog__param-title Форма
+                            span.catalog__param-desc 6 граней
+                        li.catalog__param
+                            span.catalog__param-title Вместим.
+                            span.catalog__param-desc 4 чел.
+                        li.catalog__param
+                            span.catalog__param-title Диаметр
+                            span.catalog__param-desc 1650 мм.
+                    .catalog__item-scheme
+                        img(src="img/catalog/item-1-scheme.jpg" alt="Схема")
+            .catalog__item-bottom
+                a.orange-btn.catalog__item-link(href="#") рассчитать стоимость
+        .catalog__item.col-3
+            .catalog__item-wrap
+                a.catalog__item-photo(href="#")
+                    span.catalog__count
+                        span.catalog__count-length 6
+                        i.catalog__count-icon.catalog__count-icon-2
+                    img.photo-full-size(src="img/catalog/item-2.jpg" alt="Фото")
+                .catalog__item-content
+                    a.catalog__item-title(href="#") Средний чан
+                    ul.catalog__params
+                        li.catalog__param
+                            span.catalog__param-title Форма
+                            span.catalog__param-desc 8 граней
+                        li.catalog__param
+                            span.catalog__param-title Вместим.
+                            span.catalog__param-desc 6 чел.
+                        li.catalog__param
+                            span.catalog__param-title Диаметр
+                            span.catalog__param-desc 1850 мм.
+                    .catalog__item-scheme
+                        img(src="img/catalog/item-2-scheme.jpg" alt="Схема")
+            .catalog__item-bottom
+                a.orange-btn.catalog__item-link(href="#") рассчитать стоимость
+        .catalog__item.col-3
+            .catalog__item-wrap
+                a.catalog__item-photo(href="#")
+                    span.catalog__count
+                        span.catalog__count-length 10
+                        i.catalog__count-icon.catalog__count-icon-3
+                    img.photo-full-size(src="img/catalog/item-3.jpg" alt="Фото")
+                .catalog__item-content
+                    a.catalog__item-title(href="#") Большой чан
+                    ul.catalog__params
+                        li.catalog__param
+                            span.catalog__param-title Форма
+                            span.catalog__param-desc 10 граней
+                        li.catalog__param
+                            span.catalog__param-title Вместим.
+                            span.catalog__param-desc 8 чел.
+                        li.catalog__param
+                            span.catalog__param-title Диаметр
+                            span.catalog__param-desc 2250 мм.
+                    .catalog__item-scheme
+                        img(src="img/catalog/item-3-scheme.jpg" alt="Схема")
+            .catalog__item-bottom
+                a.orange-btn.catalog__item-link(href="#") рассчитать стоимость

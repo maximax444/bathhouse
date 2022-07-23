@@ -1,0 +1,57 @@
+.request
+
+	.request__wrapper
+
+		.container
+
+			.request__mass
+
+				form.request__form.form
+
+					.form__body
+
+						h2.request__title Отправьте заявку на участие <br>в программе лояльности и получайте максимальную выгоду!
+
+						p.request__text После получения заявки менеджер свяжется с вами в течении 30 минут.
+
+						.request__set
+
+							.request__unit
+
+								input(class='form__field' type='text' placeholder='Ваше имя' required)
+
+							.request__unit
+
+								input(class='form__field' type='tel' placeholder='+7 (___)-___-__-__' required)
+
+							.request__unit
+
+								input(class='form__field' type='email' placeholder='Ваш e-mail' required)
+
+						.request__agreement
+
+							label.checkbox
+								input(type="checkbox" required)
+								span.checkbox__part
+									span.checkbox__square
+										svg.svg-icon
+											use(xlink:href="img/sprite.svg#check")
+									span.checkbox__text Оставляя свои данные на данном сайте, я принимаю условия <a href='#'>политики конфиденциальности</a>
+
+						.request__btn
+
+							button(type='submit' class='btn_orange') УЧАСТВОВАТЬ
+
+					.request__thanks.form__thanks
+
+						.request__title Отлично! Ваши данные на <br>участие в программе лояльности успешно отправлены.
+
+						.request__text Подождите, пожалуйста, менеджер свяжется с вами в течении 30 минут. <br>А пока вы можете подробнее посмотреть наш каталог.
+
+						.request__btn
+
+							a(href='catalog.html' class='btn_orange') В КАТАЛОГ
+
+
+
+		img(src='img/generate/request-image.jpg' class='request__image' alt='image')

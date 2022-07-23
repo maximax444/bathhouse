@@ -1,0 +1,53 @@
+@import 'variables/mixins';
+@import 'variables/template';
+
+@import 'details/fonts';
+@import 'details/forms';
+@import 'details/libs';
+@import 'details/header';
+@import 'details/footer';
+@import 'details/crumbs';
+@import 'details/play';
+
+@import 'home/old';
+@import 'home/types';
+@import 'home/create';
+@import 'home/dop';
+@import 'home/why';
+@import 'home/gallery';
+@import 'home/reviews';
+@import 'home/stars';
+@import 'home/cities';
+@import 'home/news';
+@import 'home/features';
+@import 'home/serts';
+
+@import 'config/meccano';
+
+@import 'sked/sked';
+
+@import 'delivery/delivery';
+@import 'delivery/boxing';
+@import 'delivery/stages';
+@import 'delivery/defrayal';
+
+@import 'schedule/schedule';
+
+// @import 'recall/recall';
+
+@import 'contacts/contacts';
+
+@import 'making/making';
+
+@import 'stock/stock';
+@import 'stock/amply';
+
+@import 'loyalty/ingoing';
+@import 'loyalty/conduct';
+@import 'loyalty/request';
+
+// Секции которые повторяются на страницах
+@import 'block/exhibit';
+@import 'block/unusual';
+@import 'block/diversity';
+@import 'block/helmet';
