@@ -16,7 +16,7 @@ $(document).ready(function () {
         }
     });
 
-    var readySlider = $('.home-ready__slider').owlCarousel({
+    var readySlider = $('.ready__slider').owlCarousel({
         smartSpeed: 800,
         loop: true,
         margin: 30,
@@ -35,34 +35,50 @@ $(document).ready(function () {
         smartSpeed: 800,
         loop: true,
         margin: 30,
-        items: 3,
+        items: 1,
         dots: false,
         responsive: {
             0: {
                 margin: 20
             },
-            550: {
+            768: {
+                items: 2,
+                margin: 30
+            },
+            1200: {
+                items: 3,
                 margin: 30
             }
         }
+    });
+    $('.gallery__all-wrap').mCustomScrollbar({
+        axis: "x",
+
+        advanced: { autoExpandHorizontalScroll: true }
     });
     var sertsSlider = $('.serts__slider').owlCarousel({
         smartSpeed: 800,
         loop: true,
         margin: 30,
         items: 3,
-        center: true,
+        center: false,
         dots: false,
         autoWidth: true,
         responsive: {
             0: {
+                margin: 10
+            },
+            576: {
+                center: true,
                 margin: 20
             },
-            550: {
+            768: {
+                center: true,
                 margin: 30
             }
         }
     });
+
     $('.serts__next').click(function () {
         sertsSlider.trigger('next.owl.carousel');
     });
@@ -78,11 +94,11 @@ $(document).ready(function () {
         reviewsSlider.trigger('prev.owl.carousel');
     });
 
-    $('.home-ready .slider__next').click(function () {
+    $('.ready .slider__next').click(function () {
         readySlider.trigger('next.owl.carousel');
     });
 
-    $('.home-ready .slider__prev').click(function () {
+    $('.ready .slider__prev').click(function () {
         readySlider.trigger('prev.owl.carousel');
     });
     $('.banners__slider .slider__next').click(function () {
@@ -387,4 +403,26 @@ function formSubmit() {
             });
         }
     });
+    // var $frame = $('.frame__wrap');
+    // var $slidee = $('.frame');
+    // var $wrap = $frame.parent();
+    // $frame.sly({
+    //     horizontal: 1,
+    //     itemNav: 'basic',
+    //     smart: 1,
+    //     scrollSource: null,
+    //     activateOn: 'click',
+    //     mouseDragging: 1,
+    //     touchDragging: 1,
+    //     releaseSwing: 1,
+    //     startAt: 0,
+    //     scrollBar: $wrap.find('.scrollbar'),
+    //     scrollBy: 1,
+    //     speed: 3000,
+    //     elasticBounds: 1,
+    //     easing: 'easeOutExpo',
+    //     dragHandle: 1,
+    //     dynamicHandle: 1,
+    //     clickBar: 1
+    // });
 }

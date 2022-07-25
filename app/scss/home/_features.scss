@@ -74,3 +74,77 @@
         }
     }
 }
+
+@media(max-width: $max-lg) {
+    .features {
+        padding: 80px 0;
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 40px 0;
+        }
+
+        &__block {
+            max-width: 50%;
+        }
+    }
+}
+
+@media(max-width: $max-md) {
+    .features {
+        padding: 60px 0;
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 40px 0;
+        }
+
+        &__block {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: $max-sm) {
+    .features {
+        padding: 60px 0;
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 40px 0;
+        }
+
+        &__block {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: normal;
+            margin-bottom: 40px;
+        }
+
+        &__img {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 10px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__name {
+            font-size: 20px;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        &__descr {
+            font-size: 14px;
+            line-height: normal;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.why {
+    padding-top: 160px;
+    padding-bottom: 285px;
+
+    &-bg {
+        height: 2281px;
+        background: url('../img/home/why.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        max-width: 485px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 50px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        max-width: 840px;
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    &__wrap {
+        width: 612px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 31px 98px;
+    }
+
+
+
+    &__block {
+        display: flex;
+        align-items: center;
+
+        span {
+            width: 164px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__img {
+        width: 70px;
+        height: 70px;
+        margin-right: 23px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        width: 262px;
+        height: 60px;
+        margin-top: 61px;
+        background: #F15E13;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+        img {
+            margin-left: 20px;
+            @include trs;
+        }
+
+        &:hover {
+            img {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: $max-md) {
+    .why {
+        &-bg {
+            height: auto;
+        }
+
+        padding: 60px 0;
+
+        &__wrap {
+            width: 100%;
+            grid-gap: 30px;
+        }
+    }
+}
+
+@media(max-width: $max-sm) {
+    .why {
+        &-bg {
+            height: auto;
+        }
+
+        padding: 60px 0;
+
+        &__title {
+            font-size: 26px;
+            line-height: normal;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: normal;
+            margin-bottom: 40px;
+        }
+
+        &__wrap {
+            display: block;
+        }
+
+        &__block {
+            margin-bottom: 15px;
+
+            span {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        &__link {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}

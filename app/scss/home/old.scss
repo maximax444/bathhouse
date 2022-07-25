@@ -67,7 +67,7 @@ a {
     position: relative;
     margin: 0 auto;
     max-width: 1140px;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .page-wrap {
@@ -1080,6 +1080,10 @@ h1 {
 @media all and (max-width: 1160px) {
     .quality {
         background: none;
+    }
+
+    .content {
+        padding: 0 20px;
     }
 
     .quality:after {

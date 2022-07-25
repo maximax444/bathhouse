@@ -129,3 +129,117 @@
         color: #FFFFFF;
     }
 }
+
+@media(max-width: $max-lg) {
+    .footer {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media(max-width: $max-md) {
+    .prefooter {
+        padding: 80px 0;
+
+        &__wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .footer {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__menu {
+            padding-top: 40px;
+            order: 5;
+        }
+
+        &__end {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        &__copy {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media(max-width: $max-sm) {
+    .prefooter {
+        padding: 60px 0;
+
+        &__title {
+            font-size: 26px;
+            line-height: normal;
+            margin-bottom: 40px;
+        }
+
+        &__wrap {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 15px;
+        }
+    }
+
+    .footer {
+        padding: 60px 0;
+        padding-bottom: 40px;
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 0 10px;
+        }
+
+        &__menu {
+            padding: 20px 0 0 0;
+            order: 2;
+
+            a {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__logo {
+            order: 1;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        &__right {
+            order: 3;
+            padding-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__phone {
+            text-align: center;
+        }
+
+        &__call {
+            width: 100%;
+        }
+
+        &__end {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            padding-top: 40px;
+        }
+
+        &__soc {
+            display: block;
+
+            span {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__copy {
+            padding-top: 20px;
+        }
+    }
+}

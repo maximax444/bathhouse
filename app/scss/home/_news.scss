@@ -1,6 +1,6 @@
 .news {
     padding-top: 160px;
-    padding-bottom: 162px;
+    padding-bottom: 138px;
     background: rgba(196, 196, 196, 0.13);
 
     &__title {
@@ -80,6 +80,76 @@
         &:hover {
             opacity: 1;
             color: #F15E13;
+        }
+    }
+}
+
+@media(max-width: $max-lg) {
+    .news {
+        &__cont {
+            width: 340px;
+        }
+
+        &__img {
+            width: calc(100% - 360px);
+        }
+    }
+}
+
+@media(max-width: $max-md) {
+    .news {
+        padding: 60px 0;
+
+        &__block {
+            display: block;
+            padding: 25px 20px;
+        }
+
+        &__name {
+            margin-bottom: 20px;
+        }
+
+        &__cont {
+            width: 100%;
+            display: block;
+            padding: 0px;
+        }
+
+        &__img {
+            width: 100%;
+            height: 250px;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width: $max-sm) {
+    .news {
+        &__title {
+            font-size: 26px;
+            line-height: normal;
+            margin-bottom: 40px;
+        }
+
+        &__block {
+            display: block;
+            padding: 25px 15px;
+        }
+
+        &__name {
+            font-size: 20px;
+        }
+
+        &__cont {
+            width: 100%;
+            display: block;
+            padding: 0px;
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
         }
     }
 }

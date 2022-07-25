@@ -142,3 +142,76 @@
         }
     }
 }
+
+@media(max-width: $max-lg) {
+    .create {
+        padding: 80px 0;
+    }
+}
+
+@media(max-width: $max-md) {
+    .create {
+        &__block {
+            padding: 20px;
+        }
+
+        &__img {
+            width: calc(100% - 352px);
+        }
+    }
+}
+
+@media(max-width: $max-sm) {
+    .create {
+        padding: 60px 0;
+
+        .container::after {
+            display: none;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: normal;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        &__name {
+            font-size: 22px;
+            line-height: normal;
+        }
+
+        &__descr {
+            font-size: 14px;
+            line-height: normal;
+            position: relative;
+            z-index: 2;
+        }
+
+        &__block {
+            padding: 20px;
+        }
+
+        &__img {
+            width: 70px;
+            height: 150px;
+            top: auto;
+            bottom: 0;
+
+            &::before {
+                border-top: 94px solid #fff;
+                border-left: 0px solid transparent;
+                border-right: 70px solid transparent;
+            }
+
+            &::after {
+                border-bottom: 56px solid #fff;
+                border-left: 0px solid transparent;
+                border-right: 24px solid transparent;
+            }
+        }
+    }
+}

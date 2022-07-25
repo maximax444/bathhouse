@@ -34,6 +34,12 @@
         height: 100%;
         object-fit: cover;
 
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         &::after {
             content: "";
             width: 100%;
@@ -94,6 +100,67 @@
     &__block:hover {
         .stars__play {
             transform: scale(1.1);
+        }
+    }
+}
+
+@media(max-width: $max-lg) {
+    .stars {
+        padding: 100px 0;
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 40px 0;
+        }
+
+        &__block {
+            max-width: 48%;
+        }
+    }
+}
+
+@media(max-width: $max-md) {
+    .stars {
+        padding: 60px 0;
+
+        &__title {
+            br {
+                display: none;
+            }
+        }
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 40px 0;
+        }
+
+        &__block {
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: $max-sm) {
+    .stars {
+        padding: 60px 0;
+
+        &__title {
+            font-size: 26px;
+            line-height: normal;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__wrap {
+            flex-wrap: wrap;
+            grid-gap: 40px 0;
+        }
+
+        &__block {
+            max-width: 100%;
+            width: 100%;
         }
     }
 }
