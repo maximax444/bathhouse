@@ -131,14 +131,6 @@
 }
 
 @media(max-width: $max-lg) {
-    .footer {
-        &__wrap {
-            flex-wrap: wrap;
-        }
-    }
-}
-
-@media(max-width: $max-md) {
     .prefooter {
         padding: 80px 0;
 
@@ -155,15 +147,75 @@
         &__menu {
             padding-top: 40px;
             order: 5;
+            width: 50%;
+        }
+
+        &__logo,
+        &__right {
+            width: 50%;
+        }
+
+        &__phone {
+            text-align: left;
+        }
+    }
+}
+
+@media(max-width: $max-md) {
+    .prefooter {
+        padding: 80px 0;
+
+        &__wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__title {
+            font-size: 26px;
+            padding-right: 50px;
+            line-height: normal;
+        }
+    }
+
+    .footer {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__menu {
+            padding-top: 40px;
+            order: 5;
         }
 
         &__end {
-            flex-direction: column-reverse;
+            flex-direction: column;
             align-items: flex-start;
         }
 
         &__copy {
-            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__soc {
+            display: block;
+
+            span {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                padding-bottom: 10px;
+            }
+        }
+
+        &__end {
+            padding-top: 60px;
+        }
+
+        &__phone {
+            font-size: 26px;
+        }
+
+        &__time {
+            font-size: 13px;
         }
     }
 }
@@ -179,8 +231,17 @@
         }
 
         &__wrap {
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px 5px;
+        }
+
+        &__block {
+            font-size: 14px;
+            grid-gap: 10px;
+        }
+
+        img {
+            width: 30px;
         }
     }
 
@@ -190,43 +251,44 @@
 
         &__wrap {
             flex-wrap: wrap;
-            grid-gap: 0 10px;
+            grid-gap: 0 0px;
         }
 
         &__menu {
-            padding: 20px 0 0 0;
-            order: 2;
+            width: 50%;
+            padding: 40px 14px 0 0;
 
             a {
                 margin-bottom: 15px;
             }
+
+            &:nth-child(3) {
+                padding-right: 0;
+            }
         }
 
         &__logo {
-            order: 1;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             width: 100%;
         }
 
         &__right {
-            order: 3;
             padding-top: 20px;
             width: 100%;
             text-align: center;
         }
 
-        &__phone {
-            text-align: center;
-        }
-
         &__call {
-            width: 100%;
+            width: 250px;
         }
 
-        &__end {
-            flex-direction: column-reverse;
-            align-items: flex-start;
-            padding-top: 40px;
+        &__time {
+            margin-bottom: 20px;
+        }
+
+        &__time,
+        &__phone {
+            text-align: left;
         }
 
         &__soc {
@@ -241,5 +303,11 @@
         &__copy {
             padding-top: 20px;
         }
+    }
+}
+
+@media(max-width: 350px) {
+    .prefooter__title {
+        padding-right: 0;
     }
 }

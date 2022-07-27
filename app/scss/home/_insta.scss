@@ -48,12 +48,6 @@
             margin-left: 20px;
             @include trs;
         }
-
-        &:hover {
-            img {
-                margin-left: 30px;
-            }
-        }
     }
 
     &__wrap {
@@ -92,15 +86,36 @@
 @media(max-width: $max-lg) {
     .insta {
         padding-top: 100px;
+        padding-bottom: 80px;
 
         &__img {
-            position: static;
-            text-align: center;
+            bottom: -80px;
+            top: auto;
+            height: 390px;
+            right: 0;
+            width: 50%;
+            overflow: hidden;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__title {
+            max-width: 100%;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__descr {
+            max-width: 50%;
+            font-size: 16px;
         }
 
         &__wrap {
-            margin-top: -300px;
-            z-index: 2;
+            display: none;
         }
 
         &__link {
@@ -109,9 +124,10 @@
     }
 }
 
-@media(max-width: $max-sm) {
+@media(max-width: $max-md) {
     .insta {
         padding: 60px 0;
+        padding-bottom: 0;
 
         &__title {
             font-size: 26px;
@@ -121,36 +137,18 @@
 
         &__descr {
             font-size: 16px;
+            max-width: 100%;
             line-height: normal;
         }
 
         &__img {
             position: static;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-
-            img {
-                max-width: 348px;
-            }
-        }
-
-        &__wrap {
-            margin-top: -200px;
-            z-index: 2;
-            grid-template-columns: repeat(21, 100px);
-            grid-template-rows: repeat(2, 100px);
-
-            a {
-                width: 100px;
-                height: 100px;
-            }
+            width: 290px;
+            margin: 0 auto;
+            height: 315px;
         }
 
 
 
-        &__link {
-            width: 100%;
-        }
     }
 }

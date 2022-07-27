@@ -83,6 +83,21 @@
     }
 }
 
+@media(max-width: $max-lg) {
+    .why {
+        padding-bottom: 150px;
+        padding-top: 600px;
+
+        &-bg {
+            height: auto;
+            padding-bottom: 50px;
+            background-size: 175%;
+            background-position: top right;
+            background-color: #0F0F0F;
+        }
+    }
+}
+
 @media(max-width: $max-md) {
     .why {
         &-bg {
@@ -90,6 +105,7 @@
         }
 
         padding: 60px 0;
+        padding-top: 400px;
 
         &__wrap {
             width: 100%;
@@ -105,6 +121,7 @@
         }
 
         padding: 60px 0;
+        padding-top: 350px;
 
         &__title {
             font-size: 26px;
@@ -117,12 +134,11 @@
             margin-bottom: 40px;
         }
 
-        &__wrap {
-            display: block;
-        }
+
 
         &__block {
             margin-bottom: 15px;
+            display: block;
 
             span {
                 font-size: 16px;

@@ -15,7 +15,59 @@ $(document).ready(function () {
             }
         }
     });
+    const slider = document.querySelector('.dop__all');
+    const slider2 = document.querySelector('.gallery__all');
 
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let isDown2 = false;
+    let startX2;
+    let scrollLeft2;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider2.addEventListener('mousedown', (e) => {
+        isDown2 = true;
+        slider2.classList.add('active');
+        startX2 = e.pageX - slider2.offsetLeft;
+        scrollLeft2 = slider2.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider2.addEventListener('mouseleave', () => {
+        isDown2 = false;
+        slider2.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider2.addEventListener('mouseup', () => {
+        isDown2 = false;
+        slider2.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX); //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+    });
+    slider2.addEventListener('mousemove', (e) => {
+        if (!isDown2) return;
+        e.preventDefault();
+        const x2 = e.pageX - slider2.offsetLeft;
+        const walk2 = (x2 - startX2); //scroll-fast
+        slider2.scrollLeft = scrollLeft2 - walk2;
+    });
     var readySlider = $('.ready__slider').owlCarousel({
         smartSpeed: 800,
         loop: true,
@@ -27,6 +79,34 @@ $(document).ready(function () {
                 margin: 20
             },
             550: {
+                margin: 20
+            },
+            768: {
+                margin: 0
+            }
+        }
+    });
+    var optionsSlider = $('.options__wrap').owlCarousel({
+        smartSpeed: 800,
+        loop: false,
+        margin: 30,
+        items: 1,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 30
+            },
+            575: {
+                items: 1,
+                margin: 30
+            },
+            768: {
+                items: 2,
+                margin: 30
+            },
+            992: {
+                items: 3,
                 margin: 30
             }
         }
@@ -51,30 +131,37 @@ $(document).ready(function () {
             }
         }
     });
-    $('.gallery__all-wrap').mCustomScrollbar({
-        axis: "x",
 
-        advanced: { autoExpandHorizontalScroll: true }
-    });
     var sertsSlider = $('.serts__slider').owlCarousel({
         smartSpeed: 800,
         loop: true,
         margin: 30,
-        items: 3,
+        items: 1,
         center: false,
         dots: false,
-        autoWidth: true,
+        autoWidth: false,
         responsive: {
             0: {
+                autoWidth: false,
+                items: 1,
                 margin: 10
             },
             576: {
+                autoWidth: false,
+                items: 1,
                 center: true,
                 margin: 20
             },
             768: {
+                autoWidth: false,
+                items: 1,
                 center: true,
                 margin: 30
+            },
+            992: {
+                autoWidth: true,
+                center: true,
+                items: 3
             }
         }
     });

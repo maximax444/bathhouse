@@ -10,14 +10,18 @@
 
     &__wrap {
         display: grid;
-        // grid-auto-flow: column;
-        grid-template-columns: repeat(8, 262px);
+        grid-auto-flow: column;
+        grid-template-columns: repeat(98, 262px);
         grid-template-rows: repeat(3, 265px);
         grid-gap: 30px;
     }
 
     .frame__wrap {
         overflow: visible !important;
+    }
+
+    &__all {
+        overflow: hidden;
     }
 
     &__block {
@@ -160,9 +164,42 @@
     }
 }
 
+@media(max-width: $max-lg) {
+    .gallery {
+        padding-bottom: 60px;
+
+        &__wrap {
+            width: 690px;
+            margin: 0 auto;
+            grid-auto-flow: row;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__block {
+            &:nth-child(1) {
+                grid-column: 1/3;
+                grid-row: 1/3;
+            }
+
+            &:nth-child(2) {
+                grid-column: 1/3;
+                grid-row: 4/6;
+            }
+        }
+
+        &__video {
+            height: 560px;
+        }
+    }
+}
+
 @media(max-width: $max-md) {
     .gallery {
         padding-bottom: 60px;
+
+        &__wrap {
+            width: 510px;
+        }
     }
 }
 
@@ -174,30 +211,29 @@
         }
 
         &__wrap {
-            grid-auto-flow: column;
-            grid-template-rows: repeat(2, 200px);
-            grid-gap: 15px;
-            grid-template-columns: auto;
+            width: 100%;
+            padding: 0 15px;
+            grid-gap: 10px;
+            grid-template-rows: auto;
         }
 
         &__block {
-            &:nth-child(1) {
-                grid-column: 3/4;
-                grid-row: 1/3;
-            }
-
-            &:nth-child(2) {
-                grid-column: 7/8;
-                grid-row: 1/3;
-            }
+            height: 200px;
+            width: auto;
         }
 
         &__video {
-            max-width: 400px;
+            height: 330px;
+            width: auto;
 
             &-name {
-                font-size: 20px;
+                font-size: 18px;
+                line-height: normal;
+                padding-left: 15px;
+            }
 
+            &-make {
+                padding-left: 15px;
             }
 
             &-play {

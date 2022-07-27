@@ -146,17 +146,51 @@
 @media(max-width: $max-lg) {
     .create {
         padding: 80px 0;
+
+        &__block {
+            padding: 40px;
+        }
+
+        &__img {
+            width: 40%;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
     }
 }
 
 @media(max-width: $max-md) {
     .create {
         &__block {
-            padding: 20px;
+            padding: 25px;
+            flex-direction: column-reverse;
         }
 
         &__img {
-            width: calc(100% - 352px);
+            position: static;
+            width: calc(100% + 50px);
+            height: auto;
+            margin-left: -25px;
+            margin-top: -25px;
+            margin-right: -25px;
+            display: block;
+        }
+
+        &__cont {
+            padding: 25px;
+        }
+
+        &__descr {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        &__name {
+            padding-top: 30px;
+            max-width: 100%;
         }
     }
 }
@@ -189,29 +223,6 @@
             line-height: normal;
             position: relative;
             z-index: 2;
-        }
-
-        &__block {
-            padding: 20px;
-        }
-
-        &__img {
-            width: 70px;
-            height: 150px;
-            top: auto;
-            bottom: 0;
-
-            &::before {
-                border-top: 94px solid #fff;
-                border-left: 0px solid transparent;
-                border-right: 70px solid transparent;
-            }
-
-            &::after {
-                border-bottom: 56px solid #fff;
-                border-left: 0px solid transparent;
-                border-right: 24px solid transparent;
-            }
         }
     }
 }
